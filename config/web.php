@@ -37,11 +37,6 @@ $config = [
                 ],
             ],
         ],
-		'modules'    => [
-            'utility' => [
-                'class' => 'c006\utility\migration\Module',
-            ],
-        ],
         'db' => require(__DIR__ . '/db.php'),
         /*
         'urlManager' => [
@@ -52,6 +47,11 @@ $config = [
         ],
         */
     ],
+	'modules'    => [
+		'utility' => [
+			'class' => 'c006\utility\migration\Module',
+		],
+	],
     'params' => $params,
 ];
 
